@@ -408,7 +408,31 @@ ul {
 
 #tentang {
 	padding: 30px;
-	margin: 30px;
+	margin: 30px 0;
+}
+
+#tentang .profil {
+	background-color: bluesoft;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+#tentang .profil-info {
+	flex: 1;
+}
+
+#tentang img {
+	width: 200px;
+	border-radius: 10px
+}
+
+#tentang p {
+	line-height: 1.8;
 }
 
 .profil {
@@ -453,7 +477,7 @@ ul {
 	widht: 180px;
 	height: 180px;
 	object-fit: cover;
-	border-radius :50%;
+	border-radius: 50%;
 	transition: 0.3s;
 }
 
@@ -520,4 +544,78 @@ main {
 		width: 100%;
 		box-sizing: border-box;
 	}
+
+	.informasi {
+		padding: 15px;
+	}
+
+	.informasi-card {
+		padding: 18px;
+		gap: 15px;
+	}
+
+	.informasi-card .ikon{
+		font-size: 30px;
+	}
 }
+
+.informasi {
+	padding: 30px;
+	margin: 30px 0;
+}
+
+.informasi-card {
+	display: flax;
+	align-items: flex-start;
+	gap: 20px;
+	padding: 20px;
+	margin: 15px 0;
+	background-color: pinksoft;
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba (0, 0, 0, 0.1);
+	transition: 0.3s;
+}
+
+.informasi-card:hover {
+	transform: translateX(5px);
+}
+
+.informasion-card .ikon {
+	font-size: 35px;
+	min-width: 45px;
+}
+
+.informasi-card h3 {
+	margin: 0 0 8px;
+}
+
+.informasi-card p {
+	margin: 0;
+	line-height: 1.7;
+}
+
+@media (max-width: 768) {
+	#tentang {
+		padding: 20px;
+		margin: 20px 0;
+	}
+
+	#tentang .profil {
+		flex-direction: column;
+		text-align: center;
+		padding: 20px;
+	}
+
+	#tentang img {
+		width: 180px;
+	}
+
+	#tentang .profil-info {
+		width: 100%;
+	}
+
+	#tentang p {
+		text-align: center;
+	}
+}
+	
